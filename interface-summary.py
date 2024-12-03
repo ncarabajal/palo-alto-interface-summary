@@ -6,14 +6,15 @@ from panos import panorama
 from panos.firewall import Firewall
 from panos.device import SystemSettings
 from panos.errors import PanDeviceError
+import getpass  # Import getpass for secure password input
 
 # Define multiple Panorama devices
 PANORAMAS = {
+    "pano1": "pano1-address",
+    "pano2": "pano2-address",
+    "pano3": "pano3-address",
 
-    "PAN1-NAME": "IP"
 }
-USERNAME = "USERNAME"
-PASSWORD = "PASSWORD"
 
 def get_managed_devices(pan):
     try:
@@ -215,6 +216,10 @@ def process_panorama(pano_name, pano_ip, username, password):
             print(f"Hostname: {hostname}, IP: {device_ip}")
 
 def main():
+    # Prompt the user for username and password
+    USERNAME = input("Enter username: ")
+    PASSWORD = getpass.getpass("Enter password: ")
+
     for pano_name, pano_ip in PANORAMAS.items():
         process_panorama(pano_name, pano_ip, USERNAME, PASSWORD)
 
