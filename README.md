@@ -39,8 +39,8 @@ Clone the repository:
 
 Replace yourusername and your-repo-name with your actual GitHub username and repository name.
 ```
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/github.com/ncarabajal/palo-alto-interface-summary
+cd palo-alto-interface-summary
 ```
 Set up a virtual environment (optional but recommended):
 ```
