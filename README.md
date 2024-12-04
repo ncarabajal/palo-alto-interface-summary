@@ -92,12 +92,11 @@ Panorama Devices:
 
 To modify the list of Panorama devices, edit the PANORAMAS dictionary in the script:
 
-python
-Copy code
+```
 PANORAMAS = {
-    "latam": "ar1vpanorama.turner.com",
-    "ppano": "ppano.net.wbd.com",
-    "epano": "epano.net.wbd.com",
-    "dpano": "dpano.net.wbd.com",
-    "wbpano": "wb-us-bur-corp-vpan1.warnermedia.com"
+    "pano1": "pano-address",
+    "pano2": "pano-address",
+    "pano3": "pano-address",
+    
 }
+```
